@@ -2,22 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello !</title>
+    <title>Hello!</title>
+	<style>
+	body {
+		background-color: #0B5F6A;
+	}
+	img {
+		width:100%;
+	}
+	h1 {
+		color: #FC7138;
+		margin-left: 40px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h5,a {
+		color: #F2F2F2;
+		margin-top: 0;
+		margin-bottom: 0;
+	p {
+		color: #F2F2F2;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	</style>
+	
   </head>
   <body>
-    <h1>Hello, I'm Arba :) </h1>
+	<img src="assets/img/bar.png" alt="bar">
+    <h1>Hello ! :)</h1>
+	<h5 style="margin-left: 40px;">You're streaming http://soundcloud.com/arbaieffendi/set/tausyiah</h5>
+	<br/>
 	
     <!-- All of the Node.js APIs are available in this renderer process. -->
-    This apps render using Node.js <script>document.write(process.versions.node)</script>,
+    <!-- This apps render using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    and Electron <script>document.write(process.versions.electron)</script>. -->
 	
-	<br/><br/>
-	<p>Press Alt + F4 to quit [Windows OS]</p>
+	<iframe width="100%" height="400" scrolling="no" frameborder="no"
+		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/32786169&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
+	</iframe>
+	
+	<h5 style="text-align:right;">Alt + F4 to quit <br/>
+		This dekstop app made with <i><a href="http://electronjs.org">electronjs</a></i> :)
+		</h5>
 	
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
     </script>
+	
   </body>
 </html>
