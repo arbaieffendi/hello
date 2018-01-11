@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello !</title>
+  </head>
+  <body>
+    <h1>Hello, I'm Arba :) </h1>
+	
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    This apps render using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+	
+	<br/><br/>
+	<p>Press Alt + F4 to quit [Windows OS]</p>
+	
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
